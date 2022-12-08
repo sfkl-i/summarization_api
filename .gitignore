@@ -95,6 +95,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+project/migrations
 
 # Spyder project settings
 .spyderproject
@@ -119,3 +120,4 @@ shared/static
 
 # Silk profiles
 /profiles/
+/project/.pytest_cache
