@@ -121,3 +121,4 @@ shared/static
 # Silk profiles
 /profiles/
 /project/.pytest_cache
+/project/htmlcov

@@ -1,10 +1,7 @@
 """
 Provide CRUD operations for project.
 """
-from typing import (
-    List,
-    Union,
-)
+from typing import List, Union
 
 from app.models.pydantic import SummaryPayloadSchema
 from app.models.tortoise import TextSummary
