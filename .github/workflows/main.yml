@@ -68,13 +68,13 @@ jobs:
             -p 5003:8765 \
             ${{ env.IMAGE }}:latest
       - name: Pytest
-        run: docker exec fastapi-tdd python -m pytest .
+        run: docker exec summarization_api python -m pytest .
       - name: Flake8
-        run: docker exec fastapi-tdd python -m flake8 .
+        run: docker exec summarization_api python -m flake8 .
       - name: Black
-        run: docker exec fastapi-tdd python -m black . --check
+        run: docker exec summarization_api python -m black . --check
       - name: isort
-        run: docker exec fastapi-tdd python -m isort . --check-only
+        run: docker exec summarization_api python -m isort . --check-only
 
   deploy:
     name: Deploy to Heroku
