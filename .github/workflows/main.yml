@@ -115,5 +115,3 @@ jobs:
       - name: Release
         run: |
           ls
-          chmod +x .release.sh
-          .release.sh
