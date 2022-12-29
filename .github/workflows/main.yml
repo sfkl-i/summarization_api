@@ -70,7 +70,7 @@ jobs:
       - name: Pytest
         run: docker exec summarization_api python -m pytest .
       - name: Pytest-unit
-        run: docker exec summarization_api pytest -k "unit" -n auto
+        run: docker exec summarization_api pytest -k "unit"
       - name: Flake8
         run: docker exec summarization_api python -m flake8 .
       - name: Black
